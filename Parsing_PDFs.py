@@ -23,6 +23,9 @@ stop_words = set(stopwords.words('english'))
 # Load the spaCy model
 nlp = spacy.load("en_core_web_sm")
 
+# Retrieve MongoDB connection URI from environment variables
+mongodb_uri = os.getenv('MONGODB_URI')  # Fetch the MongoDB URI
+
 # MongoDB setup
 mongo_client = pymongo.MongoClient("mongodb://localhost:27017/")
 db = mongo_client['pdf_database']
