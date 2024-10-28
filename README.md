@@ -49,17 +49,17 @@ source env/bin/activate  # On Windows: env\Scripts\activate
     MongoDB Connection: Modify app.py to connect to your MongoDB instance.
     Concurrency Settings: Adjust as needed for optimal performance with larger PDF batches.
     Summary Length: Customize summarization length within the summarization function as needed.
-  ##Contributing
+## Contributing
     Fork the repository.
     Create a new branch with a descriptive name.
     Make your changes and push to your fork.
     Open a pull request.
 
-  ## Solution Explanation
+## Solution Explanation
     This app enables the efficient parsing and summarization of PDFs. It allows users to upload multiple PDFs, which are processed concurrently to manage system resources effectively.
     The extracted information is saved in a MongoDB database, where users can retrieve and download metadata.
 
-  ## Key Components
+## Key Components
     Metadata Extraction: The app extracts file name, file path, title, author, keywords, and size.
     Summarization: Generates a concise summary of the PDF content, dynamically adjusted based on document length.
     Web Interface: A user-friendly interface for file uploads, displaying parsed results, and downloading metadata as JSON.
