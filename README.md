@@ -3,12 +3,12 @@
 A web application for efficient parsing, keyword extraction, metadata gathering, and summarization of PDF documents. This app processes multiple PDFs, extracts domain-specific information, and stores results in MongoDB. With an intuitive web interface, users can upload PDFs, parse their content, view extracted data, and download results in JSON format. Designed with a focus on concurrency, resource management, and a clean UI.
 
 ### Features
-Parallel PDF Processing: Efficient handling of multiple PDFs with concurrency.
-Metadata Extraction: Title, author, keywords, file path, size, memory usage, and processing time.
-Summarization: Dynamic summarization of document content tailored to document length and domain.
-MongoDB Integration: Metadata and summaries stored in MongoDB for easy retrieval and management.
-Web Interface: Upload and process files, view parsed data, and download results in a user-friendly format.
-Stylized Display: Metadata fields highlighted in a clean, structured layout, with color-coded elements and a read-only summary box.
+- Parallel PDF Processing: Efficient handling of multiple PDFs with concurrency.
+- Metadata Extraction: Title, author, keywords, file path, size, memory usage, and processing time.
+- Summarization: Dynamic summarization of document content tailored to document length and domain.
+- MongoDB Integration: Metadata and summaries stored in MongoDB for easy retrieval and management.
+- Web Interface: Upload and process files, view parsed data, and download results in a user-friendly format.
+- Stylized Display: Metadata fields highlighted in a clean, structured layout, with color-coded elements and a read-only summary box.
 
 ```project-directory/
 │
