@@ -10,7 +10,7 @@ MongoDB Integration: Metadata and summaries stored in MongoDB for easy retrieval
 Web Interface: Upload and process files, view parsed data, and download results in a user-friendly format.
 Stylized Display: Metadata fields highlighted in a clean, structured layout, with color-coded elements and a read-only summary box.
 
-project-directory/
+```project-directory/
 │
 ├── app.py                # Main Flask app with endpoints for file upload, parsing, and display
 ├── pdf_processing.log    # Log file for tracking processing events and errors
@@ -21,6 +21,7 @@ project-directory/
 ├── templates/
 │   └── upload.html       # HTML template for file upload and result display
 └── README.md             # Project documentation
+```
 
 ## Installation 
 1. Clone the Repository
@@ -39,7 +40,7 @@ source env/bin/activate  # On Windows: env\Scripts\activate
 1. Run the Application
    python app.py
 2. Access the web interface
-- Open a web browser and navigate to [http://127.0.0.1:000](http://127.0.0.1:5000).
+- Open a web browser and navigate to [http://127.0.0.1:000](http://127.0.0.1:8000).
 - Upload a PDF file using the provided interface.
 3. View Results
   After parsing, metadata fields such as title, author, keywords, and summary will display.
