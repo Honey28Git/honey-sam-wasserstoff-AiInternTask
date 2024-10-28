@@ -154,6 +154,21 @@ def summarize_text(doc, num_sentences=2):
     summary = ' '.join([sent.text for sent in summarized_sentences])
     return summary
 
+# Function to save metadata to MongoDB
+def save_to_mongodb(file_path, title, authors, keywords, summary, time_taken, memory_usage):
+    document = {
+        "file_name": os.path.basename(file_path),
+        "file_path": file_path,
+        "file_size": os.path.getsize(file_path),
+        "title": title,
+        "author": authors,
+        "keywords": keywords,
+        "summary": summary,
+        "time_taken_sec": time_taken,
+        "memory_usage_mb": memory_usage 
+    }
+    collection.insert_one(document)
+
 # Download metadata as JSON
 @app.route('/download/<file_name>', methods=['GET'])
 def download_metadata(file_name):
