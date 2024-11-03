@@ -40,7 +40,7 @@ source env/bin/activate  # On Windows: env\Scripts\activate
 1. Run the Application
    python app.py
 2. Access the web interface
-- Open a web browser and navigate to [http://127.0.0.1:000](http://127.0.0.1:8000).
+- Open a web browser and navigate to [https://pdf-parser-ggcw.onrender.com/).
 - Upload a PDF file using the provided interface.
 3. View Results
   After parsing, metadata fields such as title, author, keywords, and summary will display.
